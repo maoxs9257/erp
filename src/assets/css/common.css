@@ -1,0 +1,1370 @@
+/*
+ *ERP公共用样式
+ *
+ */
+.operation_icon{
+  color: #666666;
+  cursor: pointer;
+}
+.operation_icon:hover{
+  color: #409EFF;
+}
+/*
+ 颜色
+*/
+.icon_noFinish{
+  font-size: 18px !important;
+  color:#999999;
+  vertical-align: middle;
+}
+.icon_finish{
+  font-size: 18px !important;
+  color:#11bf67;
+  vertical-align: middle;
+}
+/*
+ 操作图标
+*/
+.icon_btn{
+  cursor: pointer;
+  font-size: 20px !important;
+  line-height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+	display: none;
+}
+tr:hover .icon_btn{
+	display: inline-block;
+}
+.icon_btn:hover{
+  color: #409EFF;
+}
+/* element el-dialog 样式 */
+.el-dialog{
+  margin:0!important;
+	border-radius: 8px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  position: fixed !important;
+}
+.el-dialog__header{
+  height: 54px;
+}
+.el-dialog__title{
+  line-height: 20px;
+  font-size: 14px;
+}
+.el-dialog__body{
+  padding: 0 30px 30px !important;
+  position: relative;
+  overflow: hidden;
+}
+.el-dialog__headerbtn{
+  top: 15px;
+}
+.el-dialog__headerbtn .el-dialog__close{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.el-dialog__headerbtn:hover .el-dialog__close{
+  background-color: rgba(214, 103, 102,1);
+  color: #ffffff;
+}
+.el-table td, .el-table th{
+  padding:8px 0;
+}
+/*  */
+.table_style .el-table thead tr th{
+  background: #8fc34b;
+}
+.table_style .el-table thead tr th>.cell{
+  color: #ffffff;
+}
+.table_style .el-table__body tr.current-row>td{
+  background: #a8c6ee;
+}
+
+/* input  placeholder 默认样式 */
+input::-webkit-input-placeholder{
+  color:#666;
+}
+input:-moz-placeholder{
+  color:#666;
+}
+input::-moz-placeholder{
+  color:#666;
+}
+input:-ms-input-placeholde{
+  color: #666;
+}
+.el-button--primary.is-plain{
+  background-color: #fff;
+}
+/* 搜素*/
+input.search_input_placeholder::-webkit-input-placeholder{
+  color:#ccc;
+}
+input.search_input_placeholder:-moz-placeholder{
+  color:#ccc;
+}
+input.search_input_placeholder::-moz-placeholder{
+  color:#ccc;
+}
+/* 模块选择界面 */
+.module .module_main{
+  margin-right: 160px;
+  height: 100%;
+  overflow: hidden;
+  position:relative;
+}
+.module .module_main .module_main_title{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.module .module_main .module_options{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.module_options .options_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right:0;
+  margin:auto;
+}
+.module_options .options_box .option{
+  vertical-align: middle;
+  display: inline-block;
+  width:110px;
+  height: 185px;
+  margin:0 60px;
+  float: left;
+}
+.module_options .options_box .option a{
+  display: block;
+  transition: 0.5s;
+	cursor: pointer;
+}
+.module_options .options_box .option:hover a{
+  transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+}
+.module_options .option i{
+  line-height: 110px;
+  font-size: 60px;
+  color: #11bf67;
+}
+.module_options .option .option_name{
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+  margin-top: 30px;
+}
+.module .module_right{
+  float: right;
+  width: 160px;
+  height: 100%;
+  border-left: 1px dashed #dfdfdf;
+  position: relative;
+}
+.module .module_right .module_set_btn{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  height: 20px;
+  cursor: pointer;
+}
+.module .module_right .module_set_btn i{
+  font-size: 26px;
+  line-height: 20px;
+}
+.module .module_right .module_set_btn:hover i{
+  color: #50b9ff;
+}
+.module .module_right .module_right_main{
+  margin:120px 15px 0;
+}
+.module .module_right_main .item{
+  text-align: right;
+  margin-bottom: 20px;
+}
+.module .module_right_main .item span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #ed990e;
+  font-weight: 800;
+  display: block;
+}
+.module .module_right_main .item p{
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* 次级首页 */
+.subhome{
+  position: relative;
+  background-color: #4a4a4a;
+}
+.subhome .subhome_content{
+  position: absolute;
+  width: 784px;
+  height: 600px;
+  top: calc(50% - 300px);
+  left: calc(50% - 392px);
+  color: #ffffff;
+}
+.subhome .subhome_content .subhome_content_top{
+  height: 300px;
+  border-bottom: 1px dashed #606060;
+}
+.subhome .subhome_content .top_options_box{
+  text-align: center;
+  margin-top: 60px;
+}
+.subhome .top_options_box .top_option{
+  display: inline-block;
+  margin: 0 40px;
+}
+.subhome .top_option .p1{
+  margin-top: 30px;
+}
+.subhome .top_option p{
+  font-size: 14px;
+  line-height: 25px;
+}
+.subhome .subhome_content_top .top_title{
+  text-align: center;
+  font-size: 16px;
+  padding-top: 60px;
+}
+.subhome .subhome_content .subhome_content_fot{
+  height: 300px;
+  text-align: center;
+}
+.subhome .subhome_content_fot a{
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  margin: 65px 5px;
+  position: relative;
+  vertical-align: middle;
+}
+.subhome .subhome_content_fot a:hover{
+  background-color: #505050;
+}
+.subhome .subhome_content_fot a img{
+  width: 70px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.subhome .subhome_content_fot a:hover img{
+  width: 90px;
+}
+.subhome .subhome_content_fot a p{
+  position: absolute;
+  top: 125px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* 列表模块公用样式 */
+.listModule .list_header{
+  height: 70px;
+  padding:0 30px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+.listModule .list_setbar{
+  height: 50px;
+  padding: 0 30px;
+  background-color: #f8f8f8;
+}
+.listModule .list_setbar .list_setbar_options{
+  height: 50px;
+  position: relative;
+}
+.listModule .list_setbar_options .option{
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 12px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.listModule .option:hover .option_yuan{
+  border-color: #00A0E9;
+}
+.listModule .option:hover .option_txt{
+  color:#00a0e9;
+}
+.listModule .option:hover .option_yuan i{
+  color:#00a0e9;
+}
+.listModule .option:hover .option_select .el-input__inner{
+  color: #00A0E9;
+}
+.listModule .option .option_yuan{
+  float: left;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border:1px solid #999;
+  text-align: center;
+}
+.listModule .option .option_yuan i{
+  font-size: 18px;
+  color: #999;
+  width: 100%;
+  height: 100%;
+  float: left;
+  line-height: 23px;
+}
+.listModule .option .option_txt{
+  margin:0 10px;
+  color: #666;
+}
+.listModule .option .option_select{
+  float: left;
+  margin-left: 10px;
+  width: 80px;
+}
+.listModule .option .option_select .el-input__inner{
+  height: 25px;
+  line-height: 25px;
+  padding-left: 0;
+  padding-right: 20px;
+  border:none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.listModule .option .option_select .el-input__icon{
+  line-height: 25px
+}
+.el-input__suffix{
+  right: 0;
+}
+.listModule .search_input{
+  position: absolute;
+  height: 30px;
+  width: 200px;
+  top: 10px;
+  right: 0;
+}
+.listModule .search_input input{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border:1px solid #ccc;
+  font-size: 14px;
+  color: #666666;
+  text-indent: 25px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.listModule .search_input i{
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  font-size: 20px;
+  color: #999;
+}
+.listModule .search_input input:focus{
+  border-color:#00a0e9;
+}
+.listModule .list_setbar .list_setbar_selections{
+  height: 40px;
+  padding-top: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.listModule .list_setbar_selections .selection{
+  float: left;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  margin-right: 5px;
+  color: #666666;
+  cursor: pointer;
+  border:1px solid #fff;
+}
+.listModule .selection:hover{
+  color: #00a0e9;
+}
+.listModule .selection:hover{
+  color: #00a0e9;
+}
+.listModule .list_setbar_selections .selection.now{
+  border:1px solid #00a0e9;
+  border-radius: 5px;
+  color:#00a0e9;
+  overflow: hidden;
+  padding: 0 5px;
+}
+.listModule .selection .el-input__inner{
+  padding:0 10px 0 0;
+  border:0;
+  height: 16px;
+  width: 71px;
+  line-height: 18px;
+  text-align: center;
+}
+.listModule .selection.now .el-date-editor.el-input__inner{
+  width: 170px;
+  padding: 0;
+}
+.listModule .selection .el-input__inner::-webkit-input-placeholder{
+  color: #666666;
+}
+.listModule .selection .el-input__inner:-moz-placeholder{
+  color: #666666;
+}
+.listModule .selection .el-input__inner::-moz-placeholder{
+  color: #666666;
+}
+.listModule .selection .el-input__inner:-ms-input-placeholder{
+  color: #666666;
+}
+.listModule .selection:hover .el-input__inner::-webkit-input-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection:hover .el-input__inner:-moz-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection:hover .el-input__inner::-moz-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection:hover .el-input__inner:-ms-input-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection.now1 .el-input__inner{
+  width: 160px;
+}
+.listModule .selection.now .el-input__inner{
+  color: #00a0e9;
+}
+.listModule .selection .el-range-separator{
+  line-height: 16px;
+  padding: 0;
+  display: none;
+}
+.listModule .selection.now .el-range-separator{
+  display: inline-block;
+  color: #00a0e9;
+}
+.listModule .selection .el-range-input{
+  width: 100%;
+}
+.listModule .selection .el-range-input::-webkit-input-placeholder{
+  color: #333333;
+}
+.listModule .selection .el-range-input:-moz-placeholder{
+  color: #333333;
+}
+.listModule .selection .el-range-input::-moz-placeholder{
+  color: #333333;
+}
+.listModule .selection .el-range-input:-ms-input-placeholder{
+  color: #333333;
+}
+.listModule .selection:hover .el-range-input::-webkit-input-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection:hover .el-range-input:-moz-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection:hover .el-range-input::-moz-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection:hover .el-range-input:-ms-input-placeholder{
+  color: #00a0e9;
+}
+.listModule .selection .el-range-input:nth-child(4){
+  display: none;
+}
+.listModule .selection.now .el-range-input{
+  width: 50%;
+  color: #00a0e9;
+}
+.listModule .selection.now .el-range-input:nth-child(4){
+  display: inline-block;
+}
+.listModule .selection .el-input__suffix{
+  right: 0;
+}
+.listModule .selection .el-input__suffix .el-input__icon{
+  line-height: 20px;
+  width: 10px;
+}
+.el-date-editor .el-range__icon{
+  display: none;
+}
+.el-date-editor .el-range__close-icon{
+  display: none;
+}
+.listModule .list_setbar_selections .clear{
+  cursor: pointer;
+	margin-left: 10px;
+  color:#00a0e9;
+}
+.listModule .list_main{
+  height: calc(100% - 120px);
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+.listModule .list_main.se{
+  height: calc(100% - 160px);
+  margin-top: 40px;
+}
+.listModule .list_main .list_main_table{
+  position: relative;
+  height: 100%;
+  padding:0 30px;
+  background-color: #ffffff;
+}
+.listModule .list_main_table .table{
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  overflow: auto;
+}
+.listModule .list_main_table .table .el-table-column--selection .cell{
+  padding-left: 7px;
+}
+.listModule .list_main_table .table_fot{
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+}
+.listModule .list_main_table .table_fot span{
+  line-height: 30px;
+  margin-right: 10px;
+}
+.listModule .list_main .list_main_card{
+  position: relative;
+  height: 100%;
+}
+.listModule .list_main_card .card{
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 30px);
+  background-color: #e5e5e5;
+  overflow: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.listModule .card .card_ul{
+	position: absolute;
+}
+.listModule .card .card_ul::after{
+  height: 0;
+  content: '';
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+@media only screen and (max-width:1270px){
+  .listModule .list_main_card .card{
+		padding-left:calc(50% - 397px);
+		padding-right:calc(50% - 398px);
+	}
+}
+@media only screen and (max-width:1535px) and (min-width:1270px){
+	.listModule .list_main_card .card{
+		padding-left:calc(50% - 530px);
+		padding-right:calc(50% - 530px);
+	}
+}
+@media only screen and (max-width:1800px) and (min-width:1535px){
+	.listModule .list_main_card .card{
+		padding-left:calc(50% - 662px);
+		padding-right:calc(50% - 663px);
+	}
+}
+@media only screen and (max-width:2065px) and (min-width:1800px){
+  .listModule .list_main_card .card{
+  	padding-left:calc(50% - 795px);
+  	padding-right:calc(50% - 795px);
+  }
+}
+@media only screen and (min-width:2065px){
+	.listModule .list_main_card .card{
+		padding-left:calc(50% - 927px);
+		padding-right:calc(50% - 928px);
+	}
+}
+.listModule .card_ul .card_li{
+  float: left;
+	width: 265px;
+  padding: 19px 17px;
+}
+.listModule .card_li .card_li_con{
+  width: 100%;
+  padding-bottom:100%;
+  position: relative;
+
+}
+.listModule .card_li .card_li_con .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #dddddd;
+  cursor: pointer;
+  box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.listModule .card_li .card_li_con .content:hover{
+  border: 2px solid #00a0e9;
+}
+.listModule .list_main_card .card_fot{
+  position: absolute;
+  bottom: 0;
+  padding:0 30px;
+  height: 30px;
+}
+.listModule .list_main_card .card_fot span{
+  line-height: 30px;
+  margin-right: 10px;
+  font-size: 15px;
+  color: #666666;
+}
+
+/* 详情模块公用样式 */
+.deta .deta_header{
+  height: 60px;
+  padding:0 30px;
+  background: #f8f8f8;
+}
+.deta .deta_mid{
+  height: calc(100% - 60px);
+}
+.deta .deta_mid .deta_mid_bar{
+  height: 30px;
+  padding:5px 30px;
+  text-align: center;
+  float: right;
+  width: 100%;
+  transition:1s;
+  overflow: hidden;
+}
+.deta .deta_mid_bar.short{
+  width: auto;
+}
+.deta .deta_mid_bar .bar{
+  display: inline-block;
+  cursor: pointer;
+  line-height: 20px;
+  margin:0 5px;
+  color: #999999;
+}
+.deta .deta_mid_bar .bar i{
+  font-size: 20px;
+  vertical-align: middle;
+}
+.deta .deta_mid_bar .bar span{
+
+  vertical-align: middle;
+}
+.deta .deta_mid_bar .bar:hover{
+  color: #00a0e9;
+}
+.deta .deta_mid_bar .bar_left{
+  float: left;
+}
+.deta .deta_mid_bar .bar_right{
+  float: right;
+}
+.deta .deta_mid_bar .bar_center{
+
+}
+.deta .deta_mid .deta_mid_round{
+  height: 60px;
+  text-align: center;
+  margin: 30px 0 20px;
+}
+.deta .deta_mid_round .option{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 56px;
+}
+.deta .deta_mid_round .round{
+  border:2px solid #dddddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.deta .deta_mid_round .round1:hover{
+  background: #00a0e9;
+  color: #ffffff;
+  border-color: #00a0e9;
+}
+.deta .deta_mid_round .round2{
+  border-color: #9bc657;
+}
+.deta .deta_mid_round .round3{
+  border-color: rgb(234,175,76);
+}
+.deta .deta_mid_round .round4{
+  border-color: #00A0E9;
+}
+.deta .deta_mid_round .option i{
+  color: #dddddd;
+}
+.deta .deta_mid .deta_mid_infos{
+  margin: 0 30px;
+  border-top: 1px solid #dddddd;
+}
+.deta .deta_mid_infos .deta_infos_row{
+  height: 50px;
+  border-bottom: 1px dashed #dddddd;
+}
+.deta .deta_mid_infos .deta_infos_row:last-child{
+  border-bottom: 1px solid #dddddd;
+}
+.deta .deta_infos_row .deta_row_item{
+  width: 25%;
+  float: left;
+  line-height: 50px;
+}
+.deta .deta_infos_row .deta_row_item span{
+  display: inline-block;
+}
+.deta .deta_infos_row .deta_row_item .n{
+  width: 90px;
+  text-align: right;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.deta .deta_infos_row .deta_row_item .v{
+  width: calc(100% - 95px);
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.deta .deta_mid .deta_mid_table{
+  padding:0 30px;
+}
+.deta .deta_table{
+  padding: 0 30px;
+}
+/* 弹窗底部按钮 */
+
+.dialog_fot{
+  height: 30px;
+  text-align: center;
+}
+.dialog_fot button{
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  outline: none;
+  background-color: #ffffff;
+  margin:0 10px;
+}
+.dialog_fot button.sure{
+  border:1px solid #b3d8ff;
+  color: #409eff;
+  background: #ecf5ff;
+}
+.dialog_fot button.sure:hover{
+  border-color: #409eff;
+  background-color: #409eff;
+  color: #ffffff;
+}
+.dialog_fot button.pass{
+  border:1px solid #d3d4d6;
+  color: #909399;
+  background: #f4f4f5;
+}
+.dialog_fot button.pass:hover{
+  border-color: #909399;
+  background: #909399;
+  color: #ffffff;
+}
+
+/* 弹窗数据 请求失败 */
+.dialog_err{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.dialog_err p{
+  text-align: center;
+}
+.dialog_err p span{
+  color: #00A0E9;
+  cursor: pointer;
+}
+
+/* 统计报页面样式 */
+.count{
+  background: #f2f2f2;
+  position: relative;
+}
+.count .count_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin:auto;
+}
+.count .count_box .count_option{
+
+}
+
+/* 单据页样式 */
+.bill .bill_header{
+  height: 60px;
+  padding: 0 20px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #f0f0f0;
+}
+.bill .bill_mi{
+  height: 50px;
+  background: #f8f8f8;
+  padding: 0 30px;
+  position: relative;
+}
+.bill .bill_mi .bill_set{
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  cursor: pointer;
+}
+.bill .bill_mi .bill_set:hover{
+  color: #00A0E9;
+}
+.bill .bill_mi .bill_mi_item{
+  display: inline;
+  line-height: 50px;
+  margin-right: 10px;
+  position: relative;
+}
+.bill .bill_mi_item input{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 1px;
+  opacity: 0;
+}
+.bill .bill_mi_item label{
+  vertical-align: middle;
+  color: #666666;
+  cursor: pointer;
+}
+.bill .bill_mi_item label:hover{
+  color: #00A0E9;
+}
+.bill .bill_mi_item i{
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.bill .bill_main{
+  height: calc(100% - 110px);
+  padding: 0 30px;
+}
+.bill .bill_main_top .bill_infos{
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #E5E5E5;
+}
+.bill .bill_main_top .bill_info{
+  width: 200px;
+  height: 50px;
+  margin-left: 40px;
+  padding-top: 20px;
+  float: left;
+  position: relative;
+}
+.bill .bill_main_top .bill_info .ic{
+  position: absolute;
+  left:-24px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #808080;
+}
+.bill .bill_info .bill_info_div{
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #dddddd;
+  padding: 0 20px 0 10px;
+  color: #666666;
+  line-height: 30px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+.bill .bill_info .bill_info_div i{
+  line-height: 30px;
+  vertical-align: middle;
+  position: absolute;
+  right: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.bill .bill_info .bill_info_div i:hover{
+  color: red;
+}
+.bill .bill_info .bill_info_input{
+  width: 100%;
+  height: 100%;
+  border:0;
+  border-bottom: 1px solid #dddddd;
+  outline: none;
+  padding: 0 10px;
+  color: #666666;
+  font-size: 14px;
+}
+.bill .bill_info .bill_info_input:focus{
+  border-bottom: 1px solid #00A0E9;
+}
+.bill .bill_info .el-input__inner{
+  border:0;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  color:#666666;
+}
+.bill .bill_info .el-input__inner::-webkit-input-placeholder{
+  color: #666666;
+}
+.bill .bill_info .el-input__inner:-moz-placeholder{
+  color: #666666;
+}
+.bill .bill_info .el-input__inner::-moz-placeholder{
+  color: #666666;
+}
+.bill .bill_info .el-input__inner:-ms-input-placeholder{
+  color: #666666;
+}
+.bill .bill_info .el-input__inner:focus{
+  border-bottom: 1px solid #00A0E9;
+}
+.bill .bill_info .el-input__icon{
+  line-height: 30px;
+}
+.bill .bill_info .el-date-editor.el-input{
+  width: 100%;
+}
+.bill .bill_info .el-input__prefix{
+  display: none;
+}
+.bill .bill_info .el-input-number{
+  width: 100%;
+  line-height: 30px;
+}
+.bill .bill_info .el-input-number span{
+  display: none;
+}
+.bill .bill_main_fot .bill_table{
+  height: calc(100% - 50px);
+}
+.bill .bill_main_fot .bill_create_btn{
+  height: 50px;
+}
+.bill .bill_main_fot .bill_create_btn button{
+  height: 30px;
+  padding:0 10px;
+  border: 0;
+  border-radius: 5px;
+  background: #00A0E9;
+  color: #ffffff;
+  outline: none;
+  float: right;
+  margin-top: 10px;
+}
+
+/* 弹窗内筛选栏 */
+.dialog_tool{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.dialog_tool .dialog_tool_btn{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 30px;
+  width: 100px;
+  border-radius: 3px;
+  border:1px solid #00A0E9;
+  background: #ffffff;
+  color: #00A0E9;
+  outline: none;
+}
+.dialog_tool .dialog_tool_btn:hover{
+  background: #00A0E9;
+  color: #ffffff;
+}
+.dialog_tool .dialog_search{
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right:120px;
+}
+.dialog_tool .dialog_search input{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border:1px solid #dddddd;
+  padding:0 15px 0 30px;
+}
+.dialog_tool .dialog_search input:focus{
+  border:1px solid #00A0E9;
+}
+.dialog_tool .dialog_search i{
+  position: absolute;
+  left: 7px;
+  top: 1px;
+  font-size: 20px;
+}
+.dialog_tool .dialog_items{
+  height: 35px;
+  padding-top: 15px;
+}
+.dialog_tool .dialog_items .dialog_item{
+  float: left;
+  margin-right: 10px;
+}
+.dialog_tool .dialog_item .clear_btn:hover{
+  color: #00a0e9;
+  cursor: pointer;
+}
+.dialog_tool .dialog_item .el-input__inner{
+  height: 20px;
+  width: 80px;
+  padding:0 15px 0 0;
+  text-align: center;
+  border:0;
+}
+.dialog_tool .dialog_item.fi .el-input__inner{
+  border:1px solid #00A0E9;
+  color:#00A0E9;
+}
+.dialog_tool .dialog_item .el-input__icon{
+  line-height: 20px;
+  width: 15px;
+}
+.dialog_tool .dialog_item.fi .el-input__icon{
+  color: #00A0E9
+}
+.dialog_tool .dialog_item .el-input__suffix{
+  right: 0
+}
+.dialog_tool .dialog_search_copy{
+  padding-top: 10px;
+  height: 40px;
+  text-align: left;
+  position: relative;
+}
+.dialog_tool .dialog_search_copy input{
+  height: 30px;
+  width: 300px;
+  padding-left: 26px;
+  border-radius: 3px;
+  border:1px solid #dddddd;
+  color: #666666;
+}
+.dialog_tool .dialog_search_copy input:focus{
+  border-color: #00A0E9;
+}
+.dialog_tool .dialog_search_copy i{
+  position: absolute;
+  top: 14px;
+  left: 8px;
+}
+
+/* 弹窗里 两栏编辑 样式 */
+.twoCol{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.twoCol .cloumn{
+  float: left;
+  width: 50%;
+  margin:10px 0;
+  position: relative;
+}
+.twoCol .cloumn label{
+  position: absolute;
+  width: 60px;
+  text-align: right;
+  line-height: 30px;
+}
+.twoCol .cloumn input{
+  margin-left: 65px;
+  width: 70%;
+  height: 30px;
+  border:1px solid #dddddd;
+  border-radius: 5px;
+  padding:0 10px;
+  cursor: pointer;
+}
+.twoCol .cloumn input:hover{
+  border-color: #cccccc;
+}
+.twoCol .cloumn input:focus{
+  border-color: #00A0E9;
+}
+.twoCol .cloumn .el-select{
+  display: block;
+}
+.twoCol .cloumn .el-input__suffix{
+  display: none;
+}
+
+/* 设置弹窗 */
+.setset .el-dialog{
+	width: 700px;
+	height: 500px;
+}
+/* 弹窗里选项卡 */
+.dialog_tabs{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.dialog_tabs .dialog_tabs_item{
+	float: left;
+	height: 30px;
+	padding: 0 10px;
+	line-height: 28px;
+	cursor: pointer;
+	border-top:2px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #DDDDDD;
+}
+.dialog_tabs .dialog_tabs_item.active{
+	border-bottom: 1px solid #fff;
+	border-top:2px solid #00A0E9;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+.dialog_tabs_main{
+	height: calc(100% - 30px);
+}
+
+
+/* 临时公用样式 */
+#optionBar{
+		width: 100%;
+	}
+	#optionBar .optionBarTop{
+		height: 50px;
+	}
+	#optionBar .optionItem{
+		display: inline-block;
+		height: 30px;
+		margin-top: 10px;
+		line-height: 30px;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	#optionBar .optionItem:hover i{
+		color: #00A0E9;
+	}
+	#optionBar .optionItem:hover span{
+		color: #00A0E9;
+	}
+	#optionBar .optionItem:hover .itemYuan{
+		border: 1px solid #00A0E9;
+	}
+ #optionBar .optionItem:hover .itemSelect .el-input__inner::-webkit-input-placeholder{
+   color: #00A0E9;
+ }
+#optionBar .optionItem:hover .itemSelect .el-input__inner:-moz-placeholder{
+  color: #00A0E9;
+}
+#optionBar .optionItem:hover .itemSelect .el-input__inner::-moz-placeholder{
+  color: #00A0E9;
+}
+#optionBar .optionItem:hover .itemSelect .el-input__inner:-ms-input-placeholder{
+  color: #00A0E9;
+}
+#optionBar .optionItem:hover .itemSelect .el-input__inner{
+  color: #00A0E9;
+}
+
+	#optionBar .itemYuan{
+		float: left;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border: 1px solid #999;
+		line-height: 24px;
+		text-align: center;
+		margin-right: 10px;
+	}
+	#optionBar .itemYuan i{
+		color: #666;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	#optionBar span{
+		float: left;
+		color: #666;
+		line-height: 24px;
+    font-size: 14px;
+	}
+  #optionBar .itemSelect{
+    float: left;
+    height: 24px;
+    width: 80px;
+  }
+  #optionBar .itemSelect .el-input{
+    height: 24px;
+  }
+  #optionBar .itemSelect .el-input__inner{
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    text-align: left;
+  }
+  #optionBar .itemSelect .el-select .el-input .el-select__caret{
+    line-height: 24px;
+  }
+	#optionBar .optionBarFot{
+		height: 24px;
+		padding-top: 5px;
+		border-bottom: 1px solid #f0f0f0;
+	}
+	#optionBar .selectOpt{
+		width: 70px;
+		height: 18px;
+		line-height: 18px;
+		text-align: center;
+		font-size: 14px;
+		border-radius: 3px;
+		border: 1px solid #fff;
+		color: #666;
+		float: left;
+		margin-right: 5px;
+		overflow: hidden;
+	}
+	#optionBar .selectOpt.selectNow{
+		border: 1px solid #00A0E9;
+		color: #00A0E9;
+	}
+	#optionBar .selectOpt.selectNow  .el-range-input{
+		color: #00A0E9;
+	}
+	#optionBar .selectOpt.selectNow .el-input__inner{
+		color: #00A0E9;
+	}
+	#optionBar .selectOpt.selectNow .el-select .el-input .el-select__caret{
+		color: #00A0E9;
+	}
+	#optionBar .el-input__inner{
+		line-height: 18px;
+		height: 18px;
+		border: 0;
+		outline: none;
+		padding-left: 0;
+		padding-right: 15px;
+		text-align: center;
+
+	}
+	#optionBar .el-select .el-input .el-select__caret{
+		line-height: 18px;
+	}
+	#optionBar .el-input__suffix-inner{
+		line-height: 18px;
+	}
+	#optionBar .el-input__suffix{
+		right: 0;
+	}
+	#optionBar .date .el-input__inner{
+		opacity: 0;
+		padding: 0;
+	}
+	#optionBar .date .el-input__prefix{
+		display: none;
+	}
+	#optionBar .date .el-input__icon{
+		display: none;
+	}
+	#optionBar .date .el-range-editor .el-range-input{
+		width: 75px;
+	}
+	#optionBar .date .el-date-editor .el-range-separator{
+		line-height: 18px;
+		padding: 0;
+		width: 10px;
+	}
+	#optionBar .date{
+		position: relative;
+	}
+	#optionBar .date p{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#optionBar .time.date{
+		width: 160px;
+	}
+	#optionBar .time .el-input__inner{
+		opacity: 1;
+	}
+	#optionBar a{
+		font-size: 14px;
+		color: #00A0E9;
+	}
+	#optionBar .selectInp{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 200px;
+		height: 30px;
+		margin-top: 15px;
+		margin-right: 30px;
+	}
+	#optionBar .selectInp i{
+		position: absolute;
+		top: 2px;
+		left: 6px;
+		font-size: 18px;
+	}
+	#optionBar .selectInp input{
+		width: 100%;
+		height: 28px;
+		border-radius: 30px;
+		padding: 0;
+		border: 1px solid #999;
+		outline: none;
+		text-indent: 30px;
+		background-color: #f9f9fb;
+	}
+	#optionBar .selectInp input:focus{
+		border: 1px solid #00A0E9;
+	}

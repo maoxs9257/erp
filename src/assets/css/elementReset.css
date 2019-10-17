@@ -1,0 +1,27 @@
+/* element 组件样式修改 */
+/*去掉数字输入框左右加减icon*/
+.input-number.el-input-number span{
+  display: none;
+}
+/*input输入框 文字居左 内边距15px*/
+.input__inner .el-input__inner{
+  text-align: left !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.input__inner-center .el-input__inner{
+  text-align: center !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+/*table表格*/
+.el-table th>.cell{
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+
+.el-form-item-14 .el-form-item{
+  margin-bottom: 14px !important;
+}
