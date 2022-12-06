@@ -15,7 +15,7 @@
     "element-ui": "^2.10.0",
     "file-saver": "^2.0.2",
     "node-sass": "^4.11.0",
-    "qs": "^6.6.0",
+    "qs": "^6.6.1",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.2",
     "vue-cropper": "^0.4.9",
